@@ -9,7 +9,7 @@ if you want to use SASS and have an easy transpiler i'll explain how to set it u
 
 ## First thing first
 
-install node.js, found it [here](https://nodejs.org/en/)  
+install node.js, find it [here](https://nodejs.org/en/)  
 it will *unlock* the __npm__ command.
 
 ## Secondly
