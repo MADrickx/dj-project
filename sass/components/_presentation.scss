@@ -1,0 +1,75 @@
+
+//réduire header
+
+
+.c-main-presentation-content{
+
+    width: 90%;
+    padding: 1rem;
+    margin: 5%;
+    
+
+    h1{
+        border-bottom: 1px solid rgb(204, 204, 204);
+        //Couleur grise à définir
+        width: 13rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        
+    }
+    .c-main-presentation-content-contact{
+        img{
+            margin-left: 54%;
+            margin-top: 0.5rem;
+            width: 14rem;
+           
+
+        }
+    }
+
+    .c-main-presentation-content-contact-info{
+        a{
+            color: $fourth-color;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            
+
+        }
+    }
+
+    ul{
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        width: 17rem;
+        margin-bottom: 1rem;
+    }
+    .c-main-presentation-content-contact-btn{
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .btn-link{
+        background-color: #8121e0;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;   
+        padding-left: 2.7rem;
+        padding-right: 2.7rem;
+        padding-top: 1.3rem;     
+        padding-bottom: 1.3rem;
+    }
+    figure{
+        
+        img{
+            max-width: 100%;
+            height: auto;
+            //pas sur de la méthode
+                }
+
+    }
+    
+}
+
+
