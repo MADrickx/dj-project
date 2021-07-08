@@ -11,11 +11,149 @@
 .c-main-schedule-content-box{
     width: 90%;
     border: 1px solid $second-color;
-    padding: 1rem;
-    margin: 5%;
+    margin: 1rem 5%;
     box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .c-main-schedule-content-box-nav{
+    background-color: $second-color;
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    li{
+        width: 90%;
+        text-align: center;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+        list-style-type: none;
+        color: $bcg-color;
+        border-bottom:0.25rem solid $second-color;
+        cursor: pointer;
+        &:hover{
+            border-bottom:0.25rem solid $fourth-color;
+        }
+    }
+    .schedule-active{
+        border-bottom:0.25rem solid $main-color;
+    }
+}
 
+.c-main-schedule-content-box-nav-txt{
+    display: flex;
+    flex-direction:row;
+    align-items: stretch;
+}
+
+.c-main-schedule-content-box-nav-txt-timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 2rem 0;
+    .vertical-line{
+        height: 7.5rem;
+        background-color: $second-color;
+        width: 1px;
+    }
+    .container{
+        display: block;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+        input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        .checkmark{
+            position: relative;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            padding: 1rem;
+            border: 1px solid $second-color;
+            background-color: #eee;
+            border-radius: 50%;
+            &::after {
+                content: "";
+                position: absolute;
+                opacity: 0;
+                top:9px;
+                left: 9px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $main-color;
+            }
+        }
+        .choice{
+            display: none;
+            text-indent: -9999px;
+            width: 0;
+            height: 0;
+        }
+        input:checked ~ .checkmark {
+            background-color: $bcg-color;
+        }
+        input:checked ~ .checkmark::after {
+            display: inline;
+            opacity: 1;
+        }
+    }
+}
+
+.c-main-schedule-content-box-nav-txt-list-item{
+    padding: 1rem 0;
+    h2{
+        color:grey;
+        font-size: 1.2rem;
+    }
+    h1{
+        color:$second-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 0.8rem;
+        color: $fourth-color;
+    }
+    .btn-buy-tickets,.btn-buy-tickets:link,.btn-buy-tickets:visited,.btn-buy-tickets:focus{
+        text-transform: uppercase;
+        color: $second-color;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 0.5rem;
+        &:hover{
+            border-radius: 5px;
+            background-color: $main-color;
+            color: $bcg-color;
+        }
+        &::after{
+            content: " >>";
+            font-weight: 900;
+        }
+    }
+}
+
+.hidden{
+    display: none;
 }
