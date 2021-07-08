@@ -359,3 +359,109 @@ html {
 
 .hidden {
   display: none; }
+
+.c-main-latest {
+  width: 100%;
+  box-sizing: border-box; }
+
+.c-main-latest-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block; }
+
+.c-main-latest-content-txt h1 {
+  text-align: center;
+  justify-content: center;
+  color: #282828;
+  font-weight: bold; }
+
+.c-main-latest-content-txt p {
+  text-align: center;
+  color: #444444;
+  opacity: 0.7;
+  width: 90%;
+  margin: 5%; }
+
+.c-main-latest-content-albums {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%; }
+  .c-main-latest-content-albums img {
+    display: inline-block;
+    width: 100%; }
+
+.c-main-latest-content-albums-items {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .c-main-latest-content-albums-items h1 {
+    text-align: center;
+    color: #282828;
+    padding-top: 1.8rem; }
+  .c-main-latest-content-albums-items h2 {
+    text-align: center;
+    font-weight: lighter;
+    color: #282828;
+    padding-top: 1rem;
+    text-shadow: 1px 1px 2px #444444; }
+
+@media screen and (min-width: 768px) {
+  .c-main-latest-content {
+    max-width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+  .c-main-latest-content-txt {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto; }
+  .c-main-latest-content-albums-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .c-main-latest-content-albums {
+    width: 45%;
+    padding: 1%; } }
+
+@media screen and (min-width: 1441px) {
+  .c-main-latest-content {
+    max-width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+  .c-main-latest-content-txt {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto; }
+  .c-main-latest-content-albums-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .c-main-latest-content-albums {
+    width: 30%;
+    padding: 1%; }
+  .c-main-latest-content-albums-items {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .c-main-latest-content-albums-items h1 {
+      font-size: 24px; }
+    .c-main-latest-content-albums-items h2 {
+      text-align: center;
+      font-weight: lighter;
+      color: #282828;
+      padding-top: 1rem;
+      text-shadow: 1px 1px 2px #444444; } }
