@@ -1,15 +1,24 @@
+*{
+    font-family:$font-stack ;
+}
+
 
 .c-main-discover-content{
     padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
 
     background-color: rgba($color: #42424242, $alpha: 0.1);
     border-radius: 10px;
     //background color en attendant de trouver une image 
+    p{
+        text-align: center;
+    }
 
     
-    h1{
+    .c-main-discover-content-title{
         text-align: center;
-        margin-bottom: 100px;
+        font-weight: bold;
     }
 
     .c-main-discover-content-events-items{
@@ -17,21 +26,68 @@
         padding: 1rem;
         margin: 5%;
 
-     text-align: center;
-     list-style-position: inside;
-     list-style-type: square;
-        // Ajout de symboles qui respectent le desing/code couleur
+        text-align: center;
+        list-style-type: none;
+        span{
+            color: transparent;
+            background: linear-gradient(315deg, rgb(0, 162, 255) 0%,purple  74%);
+            -webkit-background-clip: text;
 
-     h1{
-        margin-bottom: 1rem;
-     }
+        }
+
+        span:hover {
+            background: linear-gradient(315deg, purple 0%, rgb(0, 162, 255)  74%);
+            -webkit-background-clip: text;
+        }
+
+
+
+
+    }
+}
+
+    @media screen and (min-width:768px) {
+
+
+
+        .c-main-discover-content-events-column{
+
+
+            display: flex;
+
+            
+
+            span, span:hover{
+                margin-left: -10rem;
+                position: absolute;
+               
+            }
+
+
+            i{
+                margin-top: 2rem;
+
+            
+            }
+
+            p{
+                padding-top: 15%;
+                margin-left: -37%;
+                text-align: left;
+            }
+
+        }
 
     }
 
-    
+
+    @media screen and (min-width:968px) {
 
 
 
 
-}
-    
+
+
+
+
+    }

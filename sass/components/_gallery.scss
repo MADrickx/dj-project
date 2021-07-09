@@ -1,0 +1,76 @@
+.c-main-galery-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:50%;
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+    }
+}
+
+.c-main-galery-content-imageHolder{
+    &:hover{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after{
+            content: 'ZOOM';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $main-color;
+            padding: 3rem 3rem;
+            border-radius: 100%;
+            position: absolute;
+            background-color: $bcg-color;
+            width: 50px;
+            height: 50px;
+            border: 1rem solid rgba(255, 255, 255, .3);
+            -webkit-background-clip: padding-box; /* for Safari */
+            background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .c-main-galery-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "a a b b c c"
+            "d d d e e e"
+            ". . . . . .";
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        div:first-child{
+            grid-area: a;
+        }
+        div:nth-child(2){
+            grid-area: b;
+        }
+        div:nth-child(3){
+            grid-area: c;
+        }
+        div:nth-child(4){
+            grid-area: d;
+        }
+        div:nth-child(5){
+            grid-area: e;
+        }
+    }
+}
+
+@media screen and (min-width:960px){
+    .c-main-galery-content{
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+}

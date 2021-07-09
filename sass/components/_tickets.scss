@@ -1,0 +1,148 @@
+.c-main-tickets{
+    padding: 3rem 1rem;
+    h1{
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 3rem;
+    }
+}
+
+.c-main-tickets-content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.c-main-content-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        text-transform: uppercase;
+        font-size: 1rem;
+        color:$fourth-color;
+        font-weight: 300;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        list-style-type: none;
+        text-align: center;
+        color: grey;
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+    .price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .value{
+        font-size: 3rem;
+        color: $third-color;
+    }
+}
+
+.btn-buy{
+    &,&:link,&:visited,&:focus{
+        text-decoration: none;
+        color: $second-color;
+        border: 1px solid $second-color;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        margin: 1rem;
+    }
+    &:hover{
+        background-color: $main-color;
+        border: 1px solid $main-color;
+        color:$bcg-color;
+    }
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .choice{
+        text-indent: -9999px;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+    .container{
+        width: 16px;
+        margin: 0;
+        padding: 1rem 2rem 1rem 1rem;
+        position: relative;
+        &:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+        input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 1rem;
+            width: 1rem;
+            top:30%;
+            left: 35%;
+            z-index: 3;
+        }
+        .checkmark{
+            position: relative;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 12.5px;
+            width: 12.5px;
+            padding: 0.5rem;
+            border: 1px solid $second-color;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+        input:checked ~ .checkmark {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+        }
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .c-main-tickets-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .c-main-content-items{
+        width: 40%;
+        margin: 5%;
+        box-shadow: 0px 0px 17px 5px rgba(129,33,224,0.1);
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 2rem 1rem;
+    }
+    .controls{
+        .container:nth-of-type(3){
+            display: none!important;
+        }
+    }
+}
+
+@media screen and (min-width:960px){
+    .controls{
+        display: none;
+    }
+    .c-main-content-items{
+        width: 30%;
+        margin:1%;
+    }
+}

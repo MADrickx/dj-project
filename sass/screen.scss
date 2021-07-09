@@ -1,11 +1,14 @@
 @import "abstract/variables";
 @import "base/html";
 @import "layout/header";
+@import "layout/main";
 @import "layout/footer";
 @import "components/banner";
 @import "components/schedule";
 @import "components/presentation";
 @import "components/discover";
 @import "components/latest";
-@import "components/release";
-@import "components/news";
+@import "components/gallery";
+@import "components/galleryInfo";
+@import "components/tickets";
+@import "components/subscribe";
