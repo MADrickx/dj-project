@@ -1,0 +1,112 @@
+* {
+    $font-stack: 'Poppins', sans-serif;
+}
+
+.c-main-news {
+    box-sizing: border-box;
+    margin-bottom: 100%;
+    padding-top: 2em;
+}
+.c-main-news-content {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+}
+.c-main-news-content-list {
+padding: 1em;
+}
+
+.c-main-news-content-list-items {
+    time {
+        text-align: left;
+        justify-content: center;
+        color:$third-color;
+        font-weight: bold;
+        border: $main-color 1px solid;
+        border-radius: 5px;
+        background-color: $main-color;
+        color: white;
+        text-transform: uppercase;
+        margin: 5%;
+        padding-right: 0.3em;
+        padding-left: 0.3em;
+
+    }
+    h2{
+        text-align: left;
+        justify-content: right;
+        color:$third-color;
+        width: 90%;
+        height: auto;
+        margin: 5%;
+
+
+    }
+    p {
+        text-align: justify;
+        color:$fourth-color;
+        opacity: 0.7;
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+.c-main-news-content-list-items-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+
+    a {
+        text-decoration: none;
+        color:$fourth-color;
+        display: inline-block;
+        padding: 1em;
+        text-align: left;
+        width: 90%;
+        margin: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+    i {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .c-main-news-content {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.c-main-news-content-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+
+.c-main-news-content-list-items {
+        text-align: left;
+        justify-content: right;
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        margin: auto;
+}
+.c-main-news-content-list-items-button {
+    width: 45%;
+}
