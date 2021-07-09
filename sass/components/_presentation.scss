@@ -1,6 +1,4 @@
 
-//réduire header
-
 
 .c-main-presentation-content{
 
@@ -12,11 +10,12 @@
     h1{
         border-bottom: 1px solid rgb(204, 204, 204);
         //Couleur grise à définir
-        width: 13rem;
+        width: 14rem;
         padding-bottom: 1rem;
         margin-bottom: 1.5rem;
         
     }
+
     .c-main-presentation-content-contact{
         img{
             margin-left: 54%;
@@ -33,6 +32,8 @@
             text-decoration: none;
             padding-left: 0.7rem;
             
+            
+            
 
         }
     }
@@ -41,9 +42,17 @@
         padding: 0;
         display: flex;
         list-style-type: none;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 17rem;
         margin-bottom: 1rem;
+
+
+        li{
+            padding-right: 1rem;
+            
+        }
+
+
     }
     .c-main-presentation-content-contact-btn{
         margin-top: 2.5rem;
@@ -51,6 +60,7 @@
     }
 
     .btn-link{
+        text-transform: uppercase;
         background-color: #8121e0;
         color: white;
         border-radius: 5px;
@@ -73,3 +83,90 @@
 }
 
 
+@media screen and (min-width:768px) {
+
+    .c-main-presentation-content{
+
+        width: 90%;
+        padding: 1rem;
+        margin: 5%;
+        
+    
+        h1{
+            border-bottom: 1px solid rgb(204, 204, 204);
+            //Couleur grise à définir
+            width: 15rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            
+        }
+    }
+
+    .c-main-presentation-content-contact-info{
+
+        display: flex;
+        width: 22rem;
+        justify-content: space-between;
+        a{
+            color: $fourth-color;
+            text-decoration: none;
+        }
+           
+    }
+
+
+}
+
+@media screen and (min-width:968px) {
+    .c-main-presentation-content{
+
+        width: 90%;
+        margin: 5%;
+        margin-bottom: 0px;
+        
+    
+        h1{
+            border-bottom: 1px solid rgb(204, 204, 204);
+            //Couleur grise à définir
+            width: 18rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            
+        }
+    }
+
+
+    .c-main-presentation-content{
+        display: flex;
+    }
+    .c-main-presentation-content-left{
+
+        li{
+            margin-right: 1rem;
+        }
+
+        .c-main-presentation-content-contact-info{
+
+            margin-bottom: 2rem;
+
+
+        
+            
+
+
+        }
+    }
+    .c-main-presentation-content-right{
+        img{
+            margin-left: 5rem;
+            padding-right: 5rem;
+            min-height: 400px;
+            width: 700px;
+        }
+    }
+
+
+
+
+
+}
