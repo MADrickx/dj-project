@@ -87,7 +87,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos autem saepe sit ipsam sequi nulla excepturi in dolore nostrum!</p>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="c-main-release">
             <div class="c-main-release-content">
                 <h1>Listen to the latest release by DJ Angerone</h1>
@@ -272,10 +272,14 @@
             </div>
         </section>
         <section class="c-main-tickets">
+            <h1>Tickets</h1>
             <div class="c-main-tickets-content">
                 <div class="c-main-content-items">
                     <h1>basic</h1>
-                    <span class="price">50$</span>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="value">50</span>
+                    </div>
                     <ul>
                         <li>1 Event</li>
                         <li>Basic Access</li>
@@ -284,9 +288,12 @@
                     </ul>
                     <a class="btn-buy" href="#">Buy now</a>
                 </div>
-                <div class="c-main-content-items">
-                    <h1>basic</h1>
-                    <span class="price">80$</span>
+                <div class="c-main-content-items hidden">
+                    <h1>standard</h1>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="value">80</span>
+                    </div>
                     <ul>
                         <li>3 Event</li>
                         <li>extended Access</li>
@@ -295,9 +302,12 @@
                     </ul>
                     <a class="btn-buy" href="#">Buy now</a>
                 </div>
-                <div class="c-main-content-items">
-                    <h1>basic</h1>
-                    <span class="price">120$</span>
+                <div class="c-main-content-items hidden">
+                    <h1>gold</h1>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="value">120</span>
+                    </div>
                     <ul>
                         <li>5+ Event</li>
                         <li>Unlimited access</li>
@@ -306,15 +316,42 @@
                     </ul>
                     <a class="btn-buy" href="#">Buy now</a>
                 </div>
+                <div class="controls">
+                    <label class="container">
+                        <span class="choice">choice-one</span>
+                        <input name ="radioC" id="c-radio1" type="radio" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-one</span>
+                        <input name ="radioC" id="c-radio2" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-one</span>
+                        <input name ="radioC" id="c-radio3" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
             </div>
         </section>
         <section class="c-main-galery">
-            <div class="c-main-galery-content">
-                <img src="img/gallery-1.jpg" alt="jean michel qui mix">
-                <img src="img/gallery-2.jpg" alt="jean michel qui mix">
-                <img src="img/gallery-3.jpg" alt="jean michel qui mix">
-                <img src="img/gallery-4.jpg" alt="jean michel qui mix">
-                <img src="img/gallery-5.jpg" alt="jean michel qui mix">
+            <div class="c-main-galery-content test">
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-1.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-3.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-2.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-4.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-5.jpg" alt="gallery #1" title="gallery 1">
+                </div>
             </div>
         </section>
         <section class="c-main-news">
@@ -357,7 +394,7 @@
                 <form class="subs-form" action="#">
                     <label for="email">email</label>
                     <input type="email" id="email" name="email" placeholder="your E-mail">
-                    <input type="submit" name="submit" id="submit" value="SUBASCRIBE">
+                    <input type="submit" name="submit" id="submit" value="SUBSCRIBE">
                 </form>
             </div>
         </section>
@@ -385,5 +422,54 @@
         <p>&copy; 2021 DJ Angerone. Privacy Policy</p>
         <a class="btn-nav" href="#">&#94;</a>
     </footer> 
+    <script>
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var input1 = document.getElementById("c-radio1");
+        var input2 = document.getElementById("c-radio2");
+        var input3 = document.getElementById("c-radio3");
+        var itemsArr = document.getElementsByClassName("c-main-content-items");
+        console.log(w,h)
+        if (w<=768){
+            itemsArr[0].classList.remove("hidden")
+            itemsArr[1].classList.add("hidden")
+            itemsArr[2].classList.add("hidden")
+            window.addEventListener("click", ev => {
+            if (input1.checked){
+                itemsArr[0].classList.remove("hidden")
+                itemsArr[1].classList.add("hidden")
+                itemsArr[2].classList.add("hidden")
+            } else if (input2.checked){
+                itemsArr[0].classList.add("hidden")
+                itemsArr[1].classList.remove("hidden")
+                itemsArr[2].classList.add("hidden")
+            } else {
+                itemsArr[0].classList.add("hidden")
+                itemsArr[1].classList.add("hidden")
+                itemsArr[2].classList.remove("hidden")
+            }
+        });
+        } else if (w<=960){
+            itemsArr[0].classList.remove("hidden")
+            itemsArr[1].classList.remove("hidden")
+            itemsArr[2].classList.add("hidden")
+            window.addEventListener("click", ev => {
+            if (input1.checked){
+                itemsArr[0].classList.remove("hidden")
+                itemsArr[1].classList.remove("hidden")
+                itemsArr[2].classList.add("hidden")
+            } else {
+                itemsArr[0].classList.add("hidden")
+                itemsArr[1].classList.remove("hidden")
+                itemsArr[2].classList.remove("hidden")
+            }
+        });
+        } else {
+            itemsArr[0].classList.remove("hidden")
+            itemsArr[1].classList.remove("hidden")
+            itemsArr[2].classList.remove("hidden")
+        }
+        
+    </script>
 </body>
 </html>

@@ -1,0 +1,70 @@
+.c-main-subscribe{
+    padding: 3rem 1rem;
+    width: 100%;
+    background-image: url("../img/homepage-footer-background.jpg");
+    background-position: 50%;
+}
+
+.c-main-subscribe-content{
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: $bcg-color;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 3rem;
+    }
+}
+
+.subs-form{
+    display: flex;
+    flex-direction: column;
+    label{
+        text-indent: -9999px;
+        width: 0;
+        height: 0;
+    }
+    input{
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 0.5rem;
+        &[type="email"]{
+            border: 1px solid $fourth-color;
+            background-color: $bcg-color;
+            
+        }
+        &[type="submit"]{
+            border: 1px solid $main-color;
+            background-color: $main-color;
+            color: $bcg-color;
+            font-size: 0.7rem;
+            font-weight: 600;
+            &:hover{
+                background-color: $bcg-color;
+                color:$main-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .subs-form{
+        flex-direction: row;
+        input[type="submit"]{
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+@media screen and (min-width:960px){
+    .subs-form{
+        input[type="submit"]{
+            padding: 1rem 3rem;
+        }
+    }
+}
