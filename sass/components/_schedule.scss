@@ -44,6 +44,9 @@
     }
     .schedule-active{
         border-bottom:0.25rem solid $main-color;
+        &:hover{
+            border-bottom:0.25rem solid $main-color;
+        }
     }
 }
 
@@ -60,9 +63,18 @@
     width: 30%;
     margin: 2rem 0;
     .vertical-line{
-        height: 7.5rem;
+        height: 6.4rem;
         background-color: $second-color;
         width: 1px;
+    }
+    .vertical-line-{
+        height: calc(6.4rem + 55px);
+    }
+    .vertical-line-smol{
+        height: calc(6.4rem - 35px);
+    }
+    .vertical-line-smol2{
+        height: calc(6.4rem - 20px);
     }
     .container{
         display: block;

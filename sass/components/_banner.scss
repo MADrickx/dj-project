@@ -48,3 +48,114 @@
         color:$main-color
     }
 }
+
+.c-header-banner-home{
+    width: 100%;
+    padding: 1rem;
+    height: 50vh;
+    background-image: url("../img/homapage-banner-img.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        -webkit-text-stroke: 2px $bcg-color;
+        color:transparent;
+        font-weight: 800;
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        color:$bcg-color;
+        font-weight: 800;
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.c-header-banner-home-player{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    i{
+        color: $bcg-color;
+    }
+    .lecture{
+        display: block;
+        height: 1px;
+        width: 60%;
+        background-color: $bcg-color;
+        margin:0 1rem;    }
+    span{
+        color: white;
+    }
+    .elapsed::after{
+        content: " - ";
+
+    }
+}
+.c-header-banner-gig-container{
+    position: relative;
+
+}
+.c-header-banner-gig{
+    background-image: url("../img/");
+    background-color: $second-color;
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    color:white;
+    border-radius:5px ;
+    text-align: center;
+    position: absolute;
+    left:5%;
+    top:-3rem;
+    h1{
+        font-size: 1.8rem;
+    }
+    p{
+        font-weight: 300;
+    }
+    .btn-buy-gig{
+        &:visited,&:focus,&:link{
+            color:$bcg-color;
+            background-color: $main-color;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 5px;
+            border: 1px solid $main-color;
+            display: block;
+            margin: 1rem;
+            font-weight: 600;
+        }
+        &:hover{
+            background-color: $bcg-color;
+            color:$main-color;
+        }
+    }
+}
+
+.c-header-banner-gig-timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div[class^='time'], div[class*='time']{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .day,.hour,.minute{
+        font-size: 2rem;
+    }
+    span{
+        font-size: 0.6rem;
+    }
+}
+
+.time-seconds{
+    display: none!important;
+}
