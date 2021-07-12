@@ -21,7 +21,6 @@
         color:$bcg-color;
         font-weight: bold;
         text-shadow: 1px 1px 2px black;
-       
     }
     .btn-link{
         display: flex;
@@ -42,3 +41,17 @@
         text-transform: uppercase;
     }
 }
+
+@media screen and (min-width:960px) {
+    h1 {
+        text-align: center;
+    } 
+}
+
+@media screen and (min-width:768px) {
+    h1 {
+        text-align: center;
+    } 
+}
+
+
