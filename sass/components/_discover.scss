@@ -3,12 +3,11 @@
 }
 
 
-.c-main-discover-content{
+.c-main-discover{
     padding-top: 3rem;
     padding-bottom: 2rem;
     margin-bottom: 3rem;
 
-    background-color: rgba($color: #42424242, $alpha: 0.1);
     border-radius: 10px;
     //background color en attendant de trouver une image 
     p{
@@ -46,48 +45,66 @@
     }
 }
 
-    @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
 
 
 
-        .c-main-discover-content-events-column{
+    .c-main-discover-content-events-column{
 
 
-            display: flex;
+        display: flex;
+        text-align: center;
 
-            
+        
 
-            span, span:hover{
-                margin-left: -10rem;
-                position: absolute;
-               
-            }
-
-
-            i{
-                margin-top: 2rem;
-
-            
-            }
-
-            p{
-                padding-top: 15%;
-                margin-left: -37%;
-                text-align: left;
-            }
-
+        span, span:hover{
+            margin-left: -17%;
+            position: absolute;
+           
         }
 
+        i{
+            margin-top: 1rem;
+
+        
+        }
+
+        p,h1{
+            text-align: left;
+            padding-left: 5rem;
+        }
+        
+
+    }
+
+}
+
+
+ @media screen and (min-width: 960px) {
+
+    .c-main-discover{
+        display: flex;
+        flex-wrap: wrap;
+  
+
+        
+
+       
+
+        
+
     }
 
 
-    @media screen and (min-width:968px) {
+
+    .c-main-discover-content-events-items{
+        border: 1px solid #f76707;
+        width: 30%;
+       
 
 
-
-
-
-
-
-
+        
+        
     }
+
+}
