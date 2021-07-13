@@ -10,8 +10,18 @@
 
     border-radius: 10px;
     //background color en attendant de trouver une image 
+
+    background-image: url("../img/bg-circle-2.png") ;
+    background-repeat: no-repeat;
+    background-color: rgb(243, 243, 243);
+    background-size: cover;
+    background-position: center center;             
+
+
+
     p{
         text-align: center;
+        font-weight: 100;
     }
 
     
@@ -47,34 +57,26 @@
 
 @media screen and (min-width:768px) {
 
-
-
-    .c-main-discover-content-events-column{
-
+    .c-main-discover-content-events{
 
         display: flex;
-        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .c-main-discover-content-events-items{
+        width: 45%!important;
+        margin: 1rem 0.5%!important;
+
+
 
         
+       
 
-        span, span:hover{
-            margin-left: -17%;
-            position: absolute;
-           
-        }
-
-        i{
-            margin-top: 1rem;
 
         
-        }
-
-        p,h1{
-            text-align: left;
-            padding-left: 5rem;
-        }
         
-
     }
 
 }
@@ -94,17 +96,32 @@
         
 
     }
+    
+    .c-main-discover-content-events{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 
 
     .c-main-discover-content-events-items{
-        border: 1px solid #f76707;
-        width: 30%;
+        width: 30%!important;
+        margin: 1rem 0.5%!important;
+
+
+
+        
        
 
 
         
         
     }
+
 
 }
