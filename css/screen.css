@@ -11,7 +11,7 @@ body {
 
 .l-header {
   width: 100%;
-  margin-bottom: 20rem;
+  margin-bottom: 1rem;
 }
 
 .l-header-content {
@@ -314,6 +314,9 @@ main > section {
   position: relative;
 }
 
+.c-main-about {
+  margin-top: 20rem;
+}
 .c-main-about .c-main-about-content {
   margin: 5%;
 }

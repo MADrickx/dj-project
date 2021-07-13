@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+
+    <title>homepage</title>
+</head>
+<body> 
+  <header class="l-header">
+        <div class="l-header-content">
+            <div class="l-header-content-img">
+                <img src="img/logo.png" alt="logo DJ Agerone" title="Logo du DJ Angerone">
+                <h1>dj angerone</h1>
+            </div>
+            <nav class="l-header-content-nav">
+                <ul class="l-header-content-nav-list">
+                    <li class="l-header-nav-list-items"><a href="about.html">About</a></li>
+                    <li class="l-header-nav-list-items"><a href="discography.html">Discography</a></li>
+                    <li class="l-header-nav-list-items"><a href="tour-schedule.html">Tours</a></li>
+                    <li class="l-header-nav-list-items"><a href="gallery.html">Photos</a></li>
+                </ul>
+                <ul class="l-header-content-nav-social">
+                    <li class="l-header-content-nav-social-items"><a href="facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+            </nav>
+            <div class="l-header-content-burger">
+                <div class="l-header-content-burger-container">
+                    <div id="menuToggle"> 
+                        <!--
+                        A fake / hidden checkbox is used as click reciever,
+                        so you can use the :checked selector on it.-->
+                        
+                        <input type="checkbox" /> 
+                        
+                        <!--
+                        Some spans to act as a hamburger.
+                        
+                        They are acting like a real hamburger,
+                        not that McDonalds stuff.-->
+                        
+                        
+                        <span></span>
+                        <span></span>
+                        <span></span> 
+                           
+                        
+                        <!--
+                        Too bad the menu has to be inside of the button
+                        but hey, it's pure CSS magic.-->
+                        
+                       <ul id="menu">
+                            <li class="l-header-nav-list-items"><a href="about.html">About</a></li>
+                            <li class="l-header-nav-list-items"><a href="discography.html">Discography</a></li>
+                            <li class="l-header-nav-list-items"><a href="tour-schedule.html">Tours</a></li>
+                            <li class="l-header-nav-list-items"><a href="gallery.html">Photos</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="l-header-content-salade">
+                <div class="l-header-content-salade-container">
+                    <div id="menuToggle2"> 
+                        <!--
+                        A fake / hidden checkbox is used as click reciever,
+                        so you can use the :checked selector on it.-->
+                        
+                        <input type="checkbox" /> 
+                        
+                        <!--
+                        Some spans to act as a hamburger.
+                        
+                        They are acting like a real hamburger,
+                        not that McDonalds stuff.-->
+                        
+                        
+                        <span></span>
+                        <span></span>
+                        <span></span> 
+                           
+                        
+                        <!--
+                        Too bad the menu has to be inside of the button
+                        but hey, it's pure CSS magic.-->
+                        
+                       <ul id="menu2">
+                        <li class="l-header-content-nav-social-items"><a href="facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="youtube.com"><i class="fab fa-youtube"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-header-banner-home">
+            <div class="c-banner-home-box">
+                <h2>New Single</h2>
+                <h1>Feel the Rhythym</h1>
+                <div class="c-header-banner-home-player">
+                    <div class="c-header-banner-home-container">
+                        <i id="playButton"class="fas fa-play"></i>
+                        <span class="lecture"></span>
+                        <span id="elasped" class="elapsed">00.00</span> 
+                        <span id="remaining" class="remaining">04.27</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-header-banner-gig-container">
+            <div class="c-header-banner-gig">
+                <h1>Next gig</h1>
+                <p>tickets for my next event are already available.</p>
+                <div class="c-header-banner-gig-timer">
+                    <div class="time-days">
+                        <span class="day">41</span>
+                        <span>DAYS</span>
+                    </div>
+                    <div class="time-hours">
+                        <span class="hour">23</span>
+                        <span>HOURS</span>
+                    </div>
+                    <div class="time-minutes">
+                        <span class="minute">58</span>
+                        <span>MINUTES</span>
+                    </div>
+                    <div class="time-seconds">
+                        <span class="second">58</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <a class="btn-buy-gig"href="#">BUY TICKETS</a>
+            </div>
+        </div>
+       
+    </header>
+    <main class="l-main">
+        <section class="c-main-about">
+            <div class="c-main-about-content">
+                <figure class="c-main-about-content-img">
+                    
+                    <div class="c-main-about-content-img-shape1">
+                        <img src="img/home-dj.jpg" alt="DJ Angerone qui mix, et ça pulse!" title="DJ Angerone">
+                    </div>
+
+                </figure>
+                
+
+
+
+
+                    <div class="c-main-about-content-txt">
+                        <h1>About DJ Angerone</h1>
+                        <p>Mike Myers, professionally known as DJ Angerone, is internationally acclaimed. Progressive House & Trance DJ & musician</p>
+                    
+                    
+                        <q>I try to experiment with various music genres in every track that I make.</q>
+                    
+                        <p>Since the begining of his career in 2010, he has already released 5 EP's on a range of worldwide known labels (Booster Records, DSTRCT Recordings etc.) and reiceived a number of music awards.</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="c-main-release">
+            <div class="c-main-release-content">
+                <h1>Listen to the latest release by DJ Angerone</h1>
+                    <a href="#" class="btn-link">view Discography</a>
+            </div>
+        </section>
+        <section class="c-main-latest">
+            <div class="c-main-latest-content">
+                <div class="c-main-latest-content-txt">
+                    <h1>Latest Release</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio id nihil voluptatem recusandae eligendi, consectetur magnam placeat sint ad hic culpa quisquam tempore maiores nemo non veniam quia fuga.</p>
+                </div>
+                <div class="c-main-latest-content-albums-box">
+                    <div class="c-main-latest-content-albums">
+                        <div class="c-main-latest-content-albums-items">
+                            <img src="img/dicography-album-cover-1.jpg" alt="album intense 2019"
+                                title="image de l'album intense sorti en 2019">
+                            <h1>Intense</h1>
+                            <h2>2019</h2>
+                        </div>
+                    </div>
+                    <div class="c-main-latest-content-albums">
+                        <div class="c-main-latest-content-albums-items">
+                            <img src="img/dicography-album-cover-2.jpg" alt="album My space 2019"
+                                title="image de l'album My space sorti en 2019">
+                            <h1>My Space</h1>
+                            <h2>2019</h2>
+                        </div>
+                    </div>
+                    <div class="c-main-latest-content-albums">
+                        <div class="c-main-latest-content-albums-items">
+                            <img src="img/dicography-album-cover-3.jpg" alt="album Trance Year Mix 2018"
+                                title="image de l'album Trance Year Mix sorti en 2018">
+                            <h1>Trance Year Mix</h1>
+                            <h2>2018</h2>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+        </section> 
+        <section class="c-main-fanbase">
+            <div class="c-main-fanbase-content">
+                <div class="c-main-fanbase-content-imageContainer">
+                    <img src="img/fanbase-1.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
+                    <img src="img/fanbase-2.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
+                    <img src="img/about-us-dj-img.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
+                    <img src="img/fanbase-3.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
+                    <img src="img/fanbase-5.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
+                    <img src="img/fanbase-6.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
+                </div>
+                <div class="c-main-fanbase-content-heading">
+                    <h1 id="title-fanbase">Join the fanbase</h1>
+                    <p id="text-fanbase-principal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta praesentium animi eaque? Velit autem ullam recusandae quis quo quos quidem!</p>
+                    <div class="c-main-fanbase-content-heading-list">
+                        <div class="c-main-fanbase-content-heading-list-item">
+                            <i class="fas fa-cat"></i>
+                            <div class="c-main-fanbase-content-heading-list-item-txt">
+                                <h1>Exclusive Releases</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse possimus nesciunt adipisci quae ad!</p>
+                                
+                            </div>
+                        </div>
+                        <div class="c-main-fanbase-content-heading-list-item">
+                            <i class="fas fa-cat"></i>
+                            <div class="c-main-fanbase-content-heading-list-item-txt">
+                                <h1>Exclusive Releases</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse possimus nesciunt adipisci quae ad!</p>
+                                
+                            </div>
+                        </div>
+                        <div class="c-main-fanbase-content-heading-list-item">
+                            <i class="fas fa-cat"></i>
+                            <div class="c-main-fanbase-content-heading-list-item-txt">
+                                <h1>Exclusive Releases</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse possimus nesciunt adipisci quae ad!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-main-schedule">
+            <div class="c-main-schedule-content">
+                <div class="c-main-schedule-content-box">
+                    <nav class="c-main-schedule-content-box-nav">
+                        <ul class="c-main-schedule-content-box-nav-list">
+                            <li id="li1" class="c-main-schedule-content-box-nav-list-item schedule-active">March</li>
+                            <li id="li2" class="c-main-schedule-content-box-nav-list-item">April</li>
+                            <li id="li3" class="c-main-schedule-content-box-nav-list-item">May</li>
+                        </ul>
+                    </nav>
+                    <div class="c-main-schedule-content-box-nav-txt">
+                        <div class="c-main-schedule-content-box-nav-txt-timeline">
+                            <label class="container">
+                                <span class="choice">choice-one</span>
+                                <input name ="radioB" id="radio1" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span id="v1" class="vertical-line"></span>
+                            <label class="container">
+                                <span class="choice">choice-two</span>
+                                <input name ="radioB" id="radio2" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span id="v2" class="vertical-line"></span>
+                            <label class="container">
+                                <span class="choice">choice-three</span>
+                                <input name ="radioB" id="radio3" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span id="v3" class="vertical-line"></span>
+                            <label class="container"><span class="choice">choice-four</span>
+                                <input name ="radioB" id="radio4" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span id="v4" class="vertical-line"></span>
+                            <label class="container">
+                                <span class="choice">choice-five</span>
+                                <input name ="radioB" id="radio5" type="radio">
+                                <span class="checkmark"></span>
+                            </label> 
+                        </div>
+                        <div id="march" class="c-main-schedule-content-box-nav-txt-list">
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>march 13, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>march 21, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>march 25, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>march 29, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>march 29, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="april" class="c-main-schedule-content-box-nav-txt-list hidden">
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>April 13, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>April 21, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>April 25, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>April 29, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>April 29, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="may" class="c-main-schedule-content-box-nav-txt-list hidden">
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>May 13, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>May 21, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>May 25, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>May 29, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                            <div class="c-main-schedule-content-box-nav-txt-list-item">
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-heading">
+                                    <h2>May 29, 2019</h2>
+                                    <h1>Encore beach club, Las Vegas</h1>
+                                    <p class="hidden" id="p5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum optio vero esse tempora dolores dolorem architecto odio nisi voluptate.</p>
+                                </div>
+                                <div class="c-main-schedule-content-box-nav-txt-list-item-link">
+                                    <a class="btn-buy-tickets" href="#">buy tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-main-sponsors">
+            <div class="c-main-sponsors-content">
+                <h1>Parteners & Sponsors</h1>
+                <div class="c-main-sponsors-imageHolder">
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                </div>
+                <div class="controls2">
+                    <label class="container">
+                        <span class="choice">choice-one</span>
+                        <input name ="radioD" id="sponsors-radio1" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-two</span>
+                        <input name ="radioD" id="sponsors-radio2" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-three</span>
+                        <input name ="radioD" id="sponsors-radio3" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="c-main-tickets">
+            <h1>Tickets</h1>
+            <div class="c-main-tickets-content">
+                <div class="c-main-content-items">
+                    <h1>basic</h1>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="value">50</span>
+                    </div>
+                    <ul>
+                        <li>1 Event</li>
+                        <li>Basic Access</li>
+                        <li>Club Events Only</li>
+                        <li>Free Snacks</li>
+                    </ul>
+                    <a class="btn-buy" href="#">Buy now</a>
+                </div>
+                <div class="c-main-content-items hidden">
+                    <h1>standard</h1>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="value">80</span>
+                    </div>
+                    <ul>
+                        <li>3 Event</li>
+                        <li>extended Access</li>
+                        <li>Club & beach Events</li>
+                        <li>Free Snacks & merch</li>
+                    </ul>
+                    <a class="btn-buy" href="#">Buy now</a>
+                </div>
+                <div class="c-main-content-items hidden">
+                    <h1>gold</h1>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="value">120</span>
+                    </div>
+                    <ul>
+                        <li>5+ Event</li>
+                        <li>Unlimited access</li>
+                        <li>All Events</li>
+                        <li>Free Accommodation</li>
+                    </ul>
+                    <a class="btn-buy" href="#">Buy now</a>
+                </div>
+                <div class="controls">
+                    <label class="container">
+                        <span class="choice">choice-one</span>
+                        <input name ="radioC" id="c-radio1" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-two</span>
+                        <input name ="radioC" id="c-radio2" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-three</span>
+                        <input name ="radioC" id="c-radio3" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="c-main-galery">
+            <div class="c-main-galery-content test">
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-1.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-3.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-2.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-4.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+                <div class="c-main-galery-content-imageHolder">
+                    <img src="img/gallery-5.jpg" alt="gallery #1" title="gallery 1">
+                </div>
+            </div>
+        </section>
+        <section class="c-main-news">
+            <div class="c-main-news-content">
+                <h1>Recent news</h1>
+                <div class="c-main-news-content-list">
+                    <div class="c-main-news-content-list-items">
+                        <time datetime="2019-06-02">Jun 02, 2019</time>
+                        <h2>New single <span>feel the Rhythm</span> is already available</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero sequi quod dicta odio, totam, repudiandae quia earum quidem id perferendis voluptatibus tempore similique vitae quam adipisci officia reprehenderit deserunt? Doloribus!</p>
+                        <div class="c-main-news-content-list-items-button">
+                            <a href="#"> Read more</a>
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="c-main-news-content-list-items">
+                        <time datetime="2019-06-02">Jun 02, 2019</time>
+                        <h2>New single <span>feel the Rhythm</span> is already available</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero sequi quod dicta odio, totam, repudiandae quia earum quidem id perferendis voluptatibus tempore similique vitae quam adipisci officia reprehenderit deserunt? Doloribus!</p>
+                        <div class="c-main-news-content-list-items-button">
+                            <a href="#"> Read more</a>
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="c-main-news-content-list-items">
+                        <time datetime="2019-06-02">Jun 02, 2019</time>
+                        <h2>New single <span>feel the Rhythm</span> is already available</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero sequi quod dicta odio, totam, repudiandae quia earum quidem id perferendis voluptatibus tempore similique vitae quam adipisci officia reprehenderit deserunt? Doloribus!</p>
+                        <div class="c-main-news-content-list-items-button">
+                            <a href="#"> Read more</a>
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section class="c-main-subscribe">
+            <div class="c-main-subscribe-content">
+                <h1>Subscribe to stay informed</h1>
+                <form class="subs-form" action="#">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="your E-mail">
+                    <input type="submit" name="submit" id="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="l-footer-img">
+            <img src="img/logo.png" alt="logo DJ Agerone" title="Logo du DJ Angerone">
+            <h1>dj angerone - footer</h1>
+        </div>
+        <nav class="l-footer-nav">
+            <ul class="l-footer-nav-list">
+                <li class="l-footer-nav-list-items"><a href="about.html">About</a></li>
+                <li class="l-footer-nav-list-items"><a href="discography.html">Discography</a></li>
+                <li class="l-footer-nav-list-items"><a href="tour-schedule.html">Tours</a></li>
+                <li class="l-footer-nav-list-items"><a href="gallery.html">Photos</a></li>
+            </ul>
+            <ul class="l-footer-nav-social">
+                <li class="l-footer-nav-social-list"><a href="facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="youtube.com"><i class="fab fa-youtube"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2021 DJ Angerone. Privacy Policy</p>
+        <a class="btn-nav" href="#">&#94;</a>
+    </footer> 
+    <script src='js/main.js'>
+        
+    </script>
+</body>
+</html>
