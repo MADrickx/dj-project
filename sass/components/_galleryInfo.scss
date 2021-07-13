@@ -5,20 +5,19 @@ padding: 3rem 0;
 .c-main-galeryInfo-content{
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows:50%;
-    grid-gap: 1.5rem;
+    grid-auto-rows:auto;
+    grid-gap: 1rem;
     margin: 0;
     padding: 0;
     img{
+        max-width: 100%;
         width: 100%;
-        height: 100%;
     }
 }
 
 .c-main-galeryInfo-content-imageHolder{
     &:hover{
         position: relative;
-        transform: scale(1.1);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -35,8 +34,8 @@ padding: 3rem 0;
             width: 50px;
             height: 50px;
             border: 1rem solid rgba(255, 255, 255, .3);
-            -webkit-background-clip: padding-box; /* for Safari */
-            background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+            -webkit-background-clip: padding-box; /* for Safari /
+            background-clip: padding-box; / for IE9+, Firefox 4+, Opera, Chrome */
             cursor: pointer;
         }
     }
