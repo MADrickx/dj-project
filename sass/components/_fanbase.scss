@@ -1,0 +1,212 @@
+.c-main-fanbase{
+    background-color: $second-color;
+    background-image: url("../img/bg-circle-1.png");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+}
+
+.c-main-fanbase-content{
+    padding: 1rem;
+}
+
+.c-main-fanbase-content-heading{
+    color:$bcg-color;
+    h1{
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+}
+
+
+.c-main-fanbase-content-imageContainer{
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 1050px;
+    img:first-of-type{
+        position: absolute;
+        top:2rem;
+        right:1rem;
+    }
+    img:nth-of-type(2){
+        position: absolute;
+        top:10rem;
+        right: 1rem;
+    }
+    img:nth-of-type(3){
+        position: absolute;
+        left: 1rem;
+        top: 21rem;
+        width: 50%;
+    }
+    img:nth-of-type(4){
+        position: absolute;
+        top: 30rem;
+
+    }
+    img:nth-of-type(5){
+        position: absolute;
+        right: 1rem;
+        bottom:12rem;
+    }
+    img:nth-of-type(6){
+        position: absolute;
+        right:1rem;
+        bottom:1rem;
+    }
+
+}
+
+.c-main-fanbase-content-heading-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-main-fanbase-content-heading-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1,p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    .c-main-fanbase-content-imageContainer{
+        height: 800px;
+        img:first-of-type{
+            position: absolute;
+            top:2rem;
+            left:7.5rem;
+        }
+        img:nth-of-type(2){
+            position: absolute;
+            top:2rem;
+            right: 10rem;
+        }
+        img:nth-of-type(3){
+            position: absolute;
+            left: 5rem;
+            top: 12rem;
+            width: 20%;
+        }
+        img:nth-of-type(4){
+            position: absolute;
+            top: 15rem;
+            right: 10rem;
+    
+        }
+        img:nth-of-type(5){
+            position: absolute;
+            left:5rem;
+            top: 32rem;
+        }
+        img:nth-of-type(6){
+            position: absolute;
+            right: 9rem;
+            top: 32rem;
+        }
+    }
+    .c-main-fanbase-content-heading-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 2rem 0;
+    }
+
+    .c-main-fanbase-content-heading-list-item{
+        flex-direction: row;
+        width: 50%;
+        i{
+            width: 20%;
+            display: block;
+            color:$main-color;
+        }
+    }
+
+    .c-main-fanbase-content-heading-list-item-txt{
+        h1,p{
+            justify-content: left;
+            text-align: left!important;
+        }
+    }
+}
+
+@media screen and (min-width:960px){
+    .c-main-fanbase-content-imageContainer{
+        height: auto;
+        img{
+            width: 30%;
+        }
+        img:first-of-type{
+            position: absolute;
+            top:2rem;
+            left:7.5rem;
+        }
+        img:nth-of-type(2){
+            position: absolute;
+            top:2rem;
+            right: 3rem;
+        }
+        img:nth-of-type(3){
+            position: absolute;
+            left: 5rem;
+            top: 12rem;
+            width: 25%;
+        }
+        img:nth-of-type(4){
+            position: absolute;
+            top: 12rem;
+            right: 7rem;
+    
+        }
+        img:nth-of-type(5){
+            position: absolute;
+            left:4rem;
+            bottom: 7rem;
+            top:initial;
+        }
+        img:nth-of-type(6){
+            position: absolute;
+            right: 6rem;
+            bottom: 9rem;
+            top:initial;
+        }
+    }
+    .c-main-fanbase-content{
+        display: flex;
+        flex-direction: row;
+        & > div{
+            width:50%;
+        }
+    }
+    .c-main-fanbase-content-heading-list{
+        flex-direction: column;
+        i{
+            padding: 3rem;
+            font-size:2rem;
+        }
+    }
+    .c-main-fanbase-content-heading-list-item{
+        width: 70%;
+        p{
+            font-size: 0.8rem;
+        }
+        h1{
+            font-size: 1rem;
+        }
+    }
+
+    .c-main-fanbase-content-heading{
+        width: 60%;
+    }
+    .c-main-fanbase-content-heading-list-item-txt{
+        width: 70%;
+    }
+}
