@@ -169,3 +169,30 @@
 .hidden{
     display: none;
 }
+
+.c-main-schedule-content-box-nav-txt-list-item{
+    h1{
+        text-align: left!important;
+    }
+}
+
+@media screen and (min-width:768px){
+    .c-main-schedule-content-box-nav-list{
+        flex-direction: row!important;
+        li{
+            width: 20%!important;
+            display: block;
+        }
+    }
+    .c-main-schedule-content-box-nav-txt-list-item{
+        p{
+            width: 50%;
+        }
+    }
+    .vertical-line-smol{
+        height: calc(6.4rem + 35px);
+    }
+    .vertical-line-smol2{
+        height: calc(6.4rem - 20px);
+    }
+}
