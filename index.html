@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+
     <title>homepage</title>
 </head>
 <body> 
@@ -19,17 +21,17 @@
             </div>
             <nav class="l-header-content-nav">
                 <ul class="l-header-content-nav-list">
-                    <li class="l-header-nav-list-items"><a href="#">About</a></li>
-                    <li class="l-header-nav-list-items"><a href="#">Discography</a></li>
-                    <li class="l-header-nav-list-items"><a href="#">Tours</a></li>
-                    <li class="l-header-nav-list-items"><a href="#">Photos</a></li>
+                    <li class="l-header-nav-list-items"><a href="about.html">About</a></li>
+                    <li class="l-header-nav-list-items"><a href="discography.html">Discography</a></li>
+                    <li class="l-header-nav-list-items"><a href="tour-schedule.html">Tours</a></li>
+                    <li class="l-header-nav-list-items"><a href="gallery.html">Photos</a></li>
                 </ul>
                 <ul class="l-header-content-nav-social">
-                    <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    <li class="l-header-content-nav-social-items"><a href="pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
                 </ul>
             </nav>
             <div class="l-header-content-burger">
@@ -58,10 +60,10 @@
                         but hey, it's pure CSS magic.-->
                         
                        <ul id="menu">
-                            <li class="l-header-nav-list-items"><a href="#">About</a></li>
-                            <li class="l-header-nav-list-items"><a href="#">Discography</a></li>
-                            <li class="l-header-nav-list-items"><a href="#">Tours</a></li>
-                            <li class="l-header-nav-list-items"><a href="#">Photos</a></li>
+                            <li class="l-header-nav-list-items"><a href="about.html">About</a></li>
+                            <li class="l-header-nav-list-items"><a href="discography.html">Discography</a></li>
+                            <li class="l-header-nav-list-items"><a href="tour-schedule.html">Tours</a></li>
+                            <li class="l-header-nav-list-items"><a href="gallery.html">Photos</a></li>
                         </ul>
                       </div>
                 </div>
@@ -92,24 +94,28 @@
                         but hey, it's pure CSS magic.-->
                         
                        <ul id="menu2">
-                        <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li class="l-header-content-nav-social-items"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="youtube.com"><i class="fab fa-youtube"></i></a></li>
+                        <li class="l-header-content-nav-social-items"><a href="pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
                         </ul>
                       </div>
                 </div>
             </div>
         </div>
         <div class="c-header-banner-home">
-            <h2>New Single</h2>
-            <h1>Feel the Rhythym</h1>
-            <div class="c-header-banner-home-player">
-                <i class="fas fa-play"></i>
-                <span class="lecture"></span>
-                <span class="elapsed">00:00</span> 
-                <span class="remaining">04:27</span>
+            <div class="c-banner-home-box">
+                <h2>New Single</h2>
+                <h1>Feel the Rhythym</h1>
+                <div class="c-header-banner-home-player">
+                    <div class="c-header-banner-home-container">
+                        <i id="playButton"class="fas fa-play"></i>
+                        <span class="lecture"></span>
+                        <span id="elasped" class="elapsed">00.00</span> 
+                        <span id="remaining" class="remaining">04.27</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="c-header-banner-gig-container">
@@ -143,20 +149,26 @@
         <section class="c-main-about">
             <div class="c-main-about-content">
                 <figure class="c-main-about-content-img">
-                    <img src="img/home-dj.jpg" alt="DJ Angerone qui mix, et ça pulse!" title="DJ Angerone">
+                    
+                    <div class="c-main-about-content-img-shape1">
+                        <img src="img/home-dj.jpg" alt="DJ Angerone qui mix, et ça pulse!" title="DJ Angerone">
+                    </div>
+
                 </figure>
-                <div class="c-main-about-content-path1"></div>
-                <div class="c-main-about-content-path2"></div>
-                <div class="c-main-about-content-path3"></div>
-                <div class="c-main-about-content-path4"></div>
+                
 
 
 
-                <div class="c-main-about-content-txt">
-                    <h1>About DJ Angerone</h1>
-                    <p>Mike Myers, professionally known as DJ Angerone, is internationally acclaimed. Progressive House & Trance DJ & musician</p>
-                    <q>I try to experiment with various music genres in every track that I make.</q>
-                    <p>Since the begining of his career in 2010, he has already released 5 EP's on a range of worldwide known labels (Booster Records, DSTRCT Recordings etc.) and reiceived a number of music awards.</p>
+
+                    <div class="c-main-about-content-txt">
+                        <h1>About DJ Angerone</h1>
+                        <p>Mike Myers, professionally known as DJ Angerone, is internationally acclaimed. Progressive House & Trance DJ & musician</p>
+                    
+                    
+                        <q>I try to experiment with various music genres in every track that I make.</q>
+                    
+                        <p>Since the begining of his career in 2010, he has already released 5 EP's on a range of worldwide known labels (Booster Records, DSTRCT Recordings etc.) and reiceived a number of music awards.</p>
+                    </div>
                 </div>
             </div>
         </section> 
@@ -199,15 +211,14 @@
                     </div>
                     </div>
               </div>
-        
         </section> 
         <section class="c-main-fanbase">
             <div class="c-main-fanbase-content">
                 <div class="c-main-fanbase-content-imageContainer">
                     <img src="img/fanbase-1.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
                     <img src="img/fanbase-2.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
+                    <img src="img/about-us-dj-img.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
                     <img src="img/fanbase-3.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
-                    <img src="img/fanbase-4.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
                     <img src="img/fanbase-5.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
                     <img src="img/fanbase-6.jpg" alt="dj angérone" title="voici diverse photos de DJ Angerone">
                 </div>
@@ -216,7 +227,7 @@
                     <p id="text-fanbase-principal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta praesentium animi eaque? Velit autem ullam recusandae quis quo quos quidem!</p>
                     <div class="c-main-fanbase-content-heading-list">
                         <div class="c-main-fanbase-content-heading-list-item">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-cat"></i>
                             <div class="c-main-fanbase-content-heading-list-item-txt">
                                 <h1>Exclusive Releases</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse possimus nesciunt adipisci quae ad!</p>
@@ -224,7 +235,7 @@
                             </div>
                         </div>
                         <div class="c-main-fanbase-content-heading-list-item">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-cat"></i>
                             <div class="c-main-fanbase-content-heading-list-item-txt">
                                 <h1>Exclusive Releases</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse possimus nesciunt adipisci quae ad!</p>
@@ -232,7 +243,7 @@
                             </div>
                         </div>
                         <div class="c-main-fanbase-content-heading-list-item">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-cat"></i>
                             <div class="c-main-fanbase-content-heading-list-item-txt">
                                 <h1>Exclusive Releases</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse possimus nesciunt adipisci quae ad!</p>
@@ -446,7 +457,37 @@
         <section class="c-main-sponsors">
             <div class="c-main-sponsors-content">
                 <h1>Parteners & Sponsors</h1>
-                <div id="carousel1"></div>
+                <div class="c-main-sponsors-imageHolder">
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="sponsors-images">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                </div>
+                <div class="controls2">
+                    <label class="container">
+                        <span class="choice">choice-one</span>
+                        <input name ="radioD" id="sponsors-radio1" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-two</span>
+                        <input name ="radioD" id="sponsors-radio2" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <span class="choice">choice-three</span>
+                        <input name ="radioD" id="sponsors-radio3" type="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
             </div>
         </section>
         <section class="c-main-tickets">
@@ -584,17 +625,17 @@
         </div>
         <nav class="l-footer-nav">
             <ul class="l-footer-nav-list">
-                <li class="l-footer-nav-list-items"><a href="#">About</a></li>
-                <li class="l-footer-nav-list-items"><a href="#">Discography</a></li>
-                <li class="l-footer-nav-list-items"><a href="#">Tours</a></li>
-                <li class="l-footer-nav-list-items"><a href="#">Photos</a></li>
+                <li class="l-footer-nav-list-items"><a href="about.html">About</a></li>
+                <li class="l-footer-nav-list-items"><a href="discography.html">Discography</a></li>
+                <li class="l-footer-nav-list-items"><a href="tour-schedule.html">Tours</a></li>
+                <li class="l-footer-nav-list-items"><a href="gallery.html">Photos</a></li>
             </ul>
             <ul class="l-footer-nav-social">
-                <li class="l-footer-nav-social-list"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="l-footer-nav-social-list"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="l-footer-nav-social-list"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="l-footer-nav-social-list"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li class="l-footer-nav-social-list"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="youtube.com"><i class="fab fa-youtube"></i></a></li>
+                <li class="l-footer-nav-social-list"><a href="pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
             </ul>
         </nav>
         <p>&copy; 2021 DJ Angerone. Privacy Policy</p>

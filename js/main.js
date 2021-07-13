@@ -21,8 +21,7 @@ var w = window.innerWidth;
         var p3 = document.getElementById("p3");
         var p4 = document.getElementById("p4");
         var p5 = document.getElementById("p5");
-        var vLines = document.querySelectorAll('.vertical-line')
-        console.log(vLines)
+        var vLines = document.querySelectorAll('.vertical-line');
         if (w<=768){
             window.addEventListener("click", ev => {
             if (input1.checked){
@@ -66,7 +65,6 @@ var w = window.innerWidth;
             });
             var target = e.target;
             var id = target.id;
-            console.log (e.target, target, id)
             if(id === 'li1'){
                 march.classList.remove('hidden');
                 april.classList.add('hidden');
@@ -87,7 +85,6 @@ var w = window.innerWidth;
         function checkWindowSize(){
             var w = window.innerWidth;
             var h = window.innerHeight;
-            console.log(w,h)
             if (w<=768){
                 itemsArr[0].classList.remove("hidden")
                 itemsArr[1].classList.add("hidden")
@@ -157,6 +154,34 @@ var w = window.innerWidth;
             }
         }
 
+        function play(){
+            var remaining = document.getElementById("remaining").innerHTML;
+            var audio = new Audio("../assets/John_Williams_Cantina_Band_Ringtone_(by Fringster.com).mp3");
+            var temps = 0.1;
+            var i;
+            document.getElementById("elasped").innerHTML;
+            audio.oncanplaythrough = function(){
+                audio.play();
+                }
+                audio.loop = true;
+                audio.onended = function(){
+                audio.play();
+
+            }
+            for(i=0;i<267;i++){
+                var temps;
+                setTimeout(function(){ 
+                    temps =+ 0.01;
+                    if (temps === remaining){
+                        return;
+                    };
+                    document.getElementById("elasped").innerHTML = temps;
+                    i++
+                 }, 1000);
+            }
+        }   
+
         window.addEventListener('resize', checkWindowSize);
         window.addEventListener('click', scheduleActive);
         window.addEventListener('click', appearP);
+        window.addEventListener('click', play);
